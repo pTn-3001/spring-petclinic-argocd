@@ -5,42 +5,42 @@ services:
   config-server:
     containerName: config-server
     image: ptn3001/spring-petclinic-config-server
-    tag: "staging" # chỉ định tag staging nếu có
+    tag: "v1.2.39" # chỉ định tag staging nếu có
     port: 8888
   customers-service:
     containerName: customers-service
     image: ptn3001/spring-petclinic-customers-service
-    tag: "staging"
+    tag: "v1.2.39"
     port: 8081
   discovery-server:
     containerName: discovery-server
     image: ptn3001/spring-petclinic-discovery-server
-    tag: "staging"
+    tag: "v1.2.39"
     port: 8761
   visits-service:
     containerName: visits-service
     image: ptn3001/spring-petclinic-visits-service
-    tag: "staging"
+    tag: "v1.2.39"
     port: 8082
   vets-service:
     containerName: vets-service
     image: ptn3001/spring-petclinic-vets-service
-    tag: "staging"
+    tag: "v1.2.39"
     port: 8083
   genai-service:
     containerName: genai-service
     image: ptn3001/spring-petclinic-genai-service
-    tag: "staging"
+    tag: "v1.2.39"
     port: 8084
   api-gateway:
     containerName: api-gateway
     image: ptn3001/spring-petclinic-api-gateway
-    tag: "staging"
+    tag: "v1.2.39"
     port: 8080
   admin-server:
     containerName: admin-server
     image: ptn3001/spring-petclinic-admin-server
-    tag: "staging"
+    tag: "v1.2.39"
     port: 9090
 
 ingress:
