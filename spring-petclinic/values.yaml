@@ -1,5 +1,5 @@
 version: 'staging'
-replicaCount: 2
+replicaCount: 1
 
 services:
   config-server:
