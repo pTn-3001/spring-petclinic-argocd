@@ -5,42 +5,42 @@ services:
   config-server:
     containerName: config-server
     image: ptn3001/spring-petclinic-config-server
-    tag: "dev" # chỉ định tag dev nếu có
+    tag: "da6b7ee" # chỉ định tag dev nếu có
     port: 8888
   customers-service:
     containerName: customers-service
     image: ptn3001/spring-petclinic-customers-service
-    tag: "dev"
+    tag: "da6b7ee"
     port: 8081
   discovery-server:
     containerName: discovery-server
     image: ptn3001/spring-petclinic-discovery-server
-    tag: "dev"
+    tag: "da6b7ee"
     port: 8761
   visits-service:
     containerName: visits-service
     image: ptn3001/spring-petclinic-visits-service
-    tag: "dev"
+    tag: "da6b7ee"
     port: 8082
   vets-service:
     containerName: vets-service
     image: ptn3001/spring-petclinic-vets-service
-    tag: "dev"
+    tag: "da6b7ee"
     port: 8083
   genai-service:
     containerName: genai-service
     image: ptn3001/spring-petclinic-genai-service
-    tag: "dev"
+    tag: "da6b7ee"
     port: 8084
   api-gateway:
     containerName: api-gateway
     image: ptn3001/spring-petclinic-api-gateway
-    tag: "dev"
+    tag: "da6b7ee"
     port: 8080
   admin-server:
     containerName: admin-server
     image: ptn3001/spring-petclinic-admin-server
-    tag: "dev"
+    tag: "da6b7ee"
     port: 9090
 
 ingress:
