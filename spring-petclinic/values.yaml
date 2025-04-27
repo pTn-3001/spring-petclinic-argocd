@@ -1,48 +1,48 @@
 version: 'dev'
 replicaCount: 1
-
 services:
   config-server:
     containerName: config-server
     image: ptn3001/spring-petclinic-config-server
-    tag:  # chỉ định tag dev nếu có
+    tag: # chỉ định tag dev nếu có
     port: 8888
   customers-service:
     containerName: customers-service
     image: ptn3001/spring-petclinic-customers-service
-    tag: 
+    tag:
     port: 8081
   discovery-server:
     containerName: discovery-server
     image: ptn3001/spring-petclinic-discovery-server
-    tag: 
+    tag:
     port: 8761
   visits-service:
     containerName: visits-service
     image: ptn3001/spring-petclinic-visits-service
-    tag: 
+    tag:
     port: 8082
   vets-service:
     containerName: vets-service
     image: ptn3001/spring-petclinic-vets-service
-    tag: 
+    tag:
     port: 8083
   genai-service:
     containerName: genai-service
     image: ptn3001/spring-petclinic-genai-service
-    tag: 
+    tag:
     port: 8084
   api-gateway:
     containerName: api-gateway
     image: ptn3001/spring-petclinic-api-gateway
-    tag: 
+    tag:
     port: 8080
   admin-server:
     containerName: admin-server
     image: ptn3001/spring-petclinic-admin-server
-    tag: 
+    tag:
     port: 9090
-
+  $short_name:
+    tag: $IMAGE_TAG
 ingress:
   enabled: true
-  host: dev.spring-petclinic.com  # hostname cho dev
+  host: dev.spring-petclinic.com # hostname cho dev
