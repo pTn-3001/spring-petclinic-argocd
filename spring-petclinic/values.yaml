@@ -24,7 +24,7 @@ services:
   vets-service:
     containerName: vets-service
     image: ptn3001/spring-petclinic-vets-service
-    tag:
+    tag: 80ad6b4
     port: 8083
   genai-service:
     containerName: genai-service
